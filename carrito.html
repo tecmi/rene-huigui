@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Healthy Veggie</title>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar">
+		<div class="nav-wrapper">
+			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			<a href="#" class="brand-logo center">Carrito</a>
+			<ul class="right hide-on-med-and-down">
+				<li>
+					<form>
+						<div class="input-field">
+							<input id="search" type="search" required>
+							<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+							<i class="material-icons">close</i>
+						</div>
+					</form>
+				</li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li>&nbsp;</li>
+				<li>&nbsp;</li>
+				<li class="item"><a href="#" ><i class="fa fa-history pull-left"></i>Historial</a></li>
+				<li class="item"><a href="#" ><i class="fa fa-star-o pull-left"></i>Favoritos</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+		</div>
+	</div>
+	<section class="category container center-align">
+		<div class="row">
+			<div class="col s12">
+				<div class="card darken-1">
+					<div class="card-content white-text">
+						<div class="row">
+							<div class="col s5">
+								<div class="card darken-1">
+									<div class="card-content white-text">
+										<div class="row">
+											<form class="col s12">
+												<div class="row">
+													<div class="input-field col s12">
+														<select>
+															<option value="" disabled selected>Seleccione una opción</option>
+															<option value="1">Tarjeta de Credito</option>
+															<option value="2">Efectivo</option>
+														</select>
+														<label>
+															Metodo de pago
+														</label>
+													</div>
+												</div>
+											</form>
+										</div>
+										
+									</div>
+								</div>		
+								<div class="card darken-1">
+									<div class="card-content white-text">
+										<h3>Total:</h3>
+										<span class="card-title c2">$ 112.59 </span>
+									</div>
+								</div>
+
+								<div class="center-aling">
+									<a href="gracias.html" class="waves-effect waves-light btn btn-comprar">Comprar</a>
+								</div>
+							</div>
+							<div class="col s7">
+								<div class="card darken-1">
+									<div class="card-content white-text">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Producto</th>
+													<th>Cantidad</th>
+													<th>Precio</th>
+													<th>Subtotal</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<img src="img/verduras/elote.png" alt="">
+													</td>
+													<td>
+														2
+													</td>
+													<td>
+														$ 12.33 / kg
+													</td>
+													<td>
+														$ 24.66 
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<img src="img/frutas/pinia.png" alt="">
+													</td>
+													<td>
+														1
+													</td>
+													<td>
+														$ 22.33 / kg
+													</td>
+													<td>
+														$ 22.33 
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<img src="img/verduras/zanahoria1.png" alt="">
+													</td>
+													<td>
+														5
+													</td>
+													<td>
+														$ 13.12 / kg
+													</td>
+													<td>
+														$ 65.60 
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".button-collapse").sideNav();
+			$(document).ready(function() {
+				$('select').material_select();
+			});
+		});
+	</script>
+</body>
+</html>
+
